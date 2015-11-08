@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>Language chat</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header class="smooth">
+    <ul>
+      <li><a href="#private">Private Messages</a></li>
+      <li><a href="#chat">Main Chat</a></li>
+      <li><a href="#rooms">Language Chat Rooms</a></li>
+    </ul>
+  </header>
+  <div class="container">
+    <div class="messages"></div>
+  </div>
+
+  <script type="text/template" id="messageTemplate">
+    <div class="message">
+      <span class="messageAuthor"><%= author %></span>: 
+      <span class="messageContent"><%= content %></span>
+    <div>
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>
